@@ -60,7 +60,7 @@ function QRISCard({ merchantName, seed = 9137, label = "QRIS" }: { merchantName:
           <span className="relative z-10">Download QRIS</span>
           <span className="absolute inset-0 opacity-0 hover:opacity-100 transition" style={{background:"radial-gradient(200px 200px at var(--x,50%) var(--y,50%), rgba(0,0,0,0.05), transparent 60%)"}} onMouseMove={(e)=>{const t=e.currentTarget as HTMLElement;const r=t.getBoundingClientRect();t.style.setProperty("--x",`${e.clientX-r.left}px`);t.style.setProperty("--y",`${e.clientY-r.top}px`);}}/>
         </button>
-        <button onClick={()=>{const toast=document.createElement("div");toast.textContent="Checking payment status…";toast.className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-4 py-2 rounded-full shadow";document.body.appendChild(toast);setTimeout(()=>{toast.textContent="Pembayaran belum diterima.";setTimeout(()=>toast.remove(),1400);},900);}} className="h-11 rounded-xl bg-slate-900 text-white font-semibold hover:opacity-95 active:scale-[0.99] transition">Check status</button>
+        <button onClick={()=>{const toast=document.createElement("div");toast.textContent="Checking payment status…";toast.className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-4 py-2 rounded-full shadow";document.body.appendChild(toast);setTimeout(()=>{toast.textContent="Pembayaran belum diterima. Scan QRIS untuk melakukan pembayaran.";setTimeout(()=>toast.remove(),1400);},900);}} className="h-11 rounded-xl bg-slate-900 text-white font-semibold hover:opacity-95 active:scale-[0.99] transition">Check status</button>
       </div>
     </motion.div>
   );
