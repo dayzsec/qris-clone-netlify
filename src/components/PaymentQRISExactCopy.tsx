@@ -75,7 +75,7 @@ export default function PaymentQRISExactCopy(){
       </motion.div>
       <main className="max-w-md mx-auto px-4 pb-24">
         <motion.div initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:0.35,delay:0.05}} className="mt-4 border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
-          <div className="bg-slate-50 px-5 py-4 text-slate-800 font-semibold">PEMBAYARAN</div>
+          <div className="bg-slate-50 px-5 py-4 text-slate-800 font-semibold">PEMBAYARAN PHISING</div>
           <div className="p-5 space-y-1">
             <div className="flex items-center gap-2"><motion.div initial={{scale:0.96,opacity:0}} animate={{scale:1,opacity:1}} transition={{type:"spring",stiffness:280,damping:18}} className="text-3xl font-bold">{formatRupiah(amount)}</motion.div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-slate-400"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
             <div className="text-sm text-slate-500 flex items-center gap-2"><span>Order ID {orderId}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-slate-400"><path d="M13 5l7 7-7 7M5 5h8v8H5z"/></svg></div>
