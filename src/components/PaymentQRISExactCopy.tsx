@@ -84,7 +84,6 @@ export default function PaymentQRISExactCopy(){
         </motion.div>
         <div className="mt-6 text-xl font-semibold">GoPay/GoPay Later</div>
         <div className="mt-3"><QRISCard merchantName={merchantName} seed={9137} label="QRIS"/></div>
-        <div className="mt-4"><QRISCard merchantName={merchantName} seed={9137} label="QRIS"/></div>
         <div className="mt-6 text-center text-slate-400 font-semibold select-none">Leave this page</div>
       </main>
     </div>
